@@ -1,0 +1,48 @@
+This document describe how to make a release of python-cloudfiles.
+
+Prereq
+======
+
+- To upload python-cloudfiles to pypi you would need the rackspace
+  credentials account, please contact chmouel@chmouel.com if you don't
+  have them.
+
+- Packages for releases needed on system :
+
+ * python-nose
+ * python-epydoc
+
+Steps
+======
+
+
+1) Run tests with nosetests and be sure it ends with OK or something is broken!
+
+2) edit ChangeLog file and add an outline of the changes since the last release.
+
+3) edit cloudfiles/consts.py and increase the version, following these rules :
+
+   - Bugfixes -- increase the minor version.
+   - Major features -- increase the major version.
+
+4) Regenerate the docs with the command: epydoc --config=epydoc.conf
+
+5) make sure you have only the relevant changes staged: git st
+
+6) commit the changes: git commit -a
+
+6) tag it with the new version:  git tag VERSION
+
+7) push it to github : git push --tags origin master 
+
+8) upload it to pypi :  python setup.py sdist register upload
+
+9) if new features has been added (ie: new major release) upload the
+   documentation by going in the docs directory and zip everything to
+   a file like docs.zip and go to :
+
+   http://pypi.python.org/pypi?%3Aaction=pkg_edit&name=python-cloudfiles
+
+   (using rackspace credentials)
+   
+   and click on "choose file"" to that docs.zip and "upload documentation".
