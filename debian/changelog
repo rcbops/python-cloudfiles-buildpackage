@@ -1,0 +1,16 @@
+python-cloudfiles (2011.3-d5-rcb1) natty; urgency=low
+
+  * Updated upstream source from
+    https://github.com/cloudbuilders/python-cloudfiles.git, revision
+    77288779ae8db4615e3cd2636f573e6346253769 Updated debian packaging
+    from https://github.com/rpedde/debians.git, revision
+    72a9d68800654fd9f68ddc4d546cf0c3f6d6f081
+
+ -- root <build@syn-n04.lab>  Tue, 13 Sep 2011 23:40:43 -0500
+
+python-cloudfiles (000-000-0000) maverick; urgency=low
+
+  * Initial Commit
+
+ -- root <root@packaging>  Tue, 19 Jul 2011 22:21:31 +0000
+
