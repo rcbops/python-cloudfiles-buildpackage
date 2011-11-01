@@ -1,3 +1,10 @@
+python-cloudfiles (2011.3-final-rcb1) natty; urgency=low
+
+  * import github.com/cloudbuilders/pythn-cloudfiles.git, revision
+    77288779ae8db4615e3cd2636f573e6346253769
+
+ -- RCB Builder <rcb-deploy@lists.rackspace.com>  Tue, 01 Nov 2011 12:49:01 -0500
+
 python-cloudfiles (2011.3-d5-rcb2) natty; urgency=low
 
   * Add rcb-component flag in preparation for essex-e0 drop
@@ -12,11 +19,6 @@ python-cloudfiles (2011.3-d5-rcb1) natty; urgency=low
     from https://github.com/rpedde/debians.git, revision
     72a9d68800654fd9f68ddc4d546cf0c3f6d6f081
 
- -- root <build@syn-n04.lab>  Tue, 13 Sep 2011 23:40:43 -0500
+ -- RCB Builder <rcb-deploy@lists.rackspace.com>  Tue, 13 Sep 2011 23:40:43 -0500
 
-python-cloudfiles (000-000-0000) maverick; urgency=low
-
-  * Initial Commit
-
- -- root <root@packaging>  Tue, 19 Jul 2011 22:21:31 +0000
 
