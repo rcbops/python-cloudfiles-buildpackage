@@ -269,6 +269,7 @@ class Connection(object):
         self._check_container_name(container_name)
 
         response = self.make_request('DELETE', [container_name])
+        response.read()
 
         if (response.status == 409):
             raise ContainerNotEmpty(container_name)

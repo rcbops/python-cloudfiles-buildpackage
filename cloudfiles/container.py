@@ -71,8 +71,10 @@ class Container(object):
         self.size_used = size
         self.cdn_uri = None
         self.cdn_ssl_uri = None
+        self.cdn_streaming_uri = None
         self.cdn_ttl = None
         self.cdn_log_retention = None
+
         if connection.cdn_enabled:
             self._fetch_cdn_data()
 
@@ -82,7 +84,7 @@ class Container(object):
         Fetch the object's CDN data from the CDN service
         """
         response = self.conn.cdn_request('HEAD', [self.name])
-        if (response.status >= 200) and (response.status < 300):
+        if response.status >= 200 and response.status < 300:
             for hdr in response.getheaders():
                 if hdr[0].lower() == 'x-cdn-uri':
                     self.cdn_uri = hdr[1]
@@ -90,6 +92,8 @@ class Container(object):
                     self.cdn_ttl = int(hdr[1])
                 if hdr[0].lower() == 'x-cdn-ssl-uri':
                     self.cdn_ssl_uri = hdr[1]
+                if hdr[0].lower() == 'x-cdn-streaming-uri':
+                    self.cdn_streaming_uri = hdr[1]
                 if hdr[0].lower() == 'x-log-retention':
                     self.cdn_log_retention = hdr[1] == "True" and True or False
 
@@ -241,6 +245,22 @@ class Container(object):
         if not self.is_public():
             raise ContainerNotPublic()
         return self.cdn_ssl_uri
+
+    @requires_name(InvalidContainerName)
+    def public_streaming_uri(self):
+        """
+        Return the Streaming URI for this container, if it is publically
+        accessible via the CDN.
+
+        >>> connection['container1'].public_ssl_uri()
+        'https://c61.stream.rackcdn.com'
+
+        @rtype: str
+        @return: the public Streaming URI for this container
+        """
+        if not self.is_public():
+            raise ContainerNotPublic()
+        return self.cdn_streaming_uri
 
     @requires_name(InvalidContainerName)
     def create_object(self, object_name):

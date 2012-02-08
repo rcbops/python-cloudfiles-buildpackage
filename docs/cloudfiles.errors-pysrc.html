@@ -131,82 +131,90 @@ cloudfiles.storage_object.ObjectResults.__init__" class="py-name" href="#" oncli
 </div><div id="ContainerNotEmpty.__repr__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="ContainerNotEmpty.__repr__-expanded"><a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-string">"%s(%s)"</tt> <tt class="py-op">%</tt> <tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">__class__</tt><tt class="py-op">.</tt><tt class="py-name">__name__</tt><tt class="py-op">,</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt class="py-name">container_name</tt><tt class="py-op">)</tt> </tt>
 </div></div><a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line"> </tt>
 <a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line"> </tt>
-<a name="InvalidContainerName"></a><div id="InvalidContainerName-def"><a name="L59"></a><tt class="py-lineno"> 59</tt> <a class="py-toggle" href="#" id="InvalidContainerName-toggle" onclick="return toggle('InvalidContainerName');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.InvalidContainerName-class.html">InvalidContainerName</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="InvalidContainerName-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="InvalidContainerName-expanded"><a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
-<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line"><tt class="py-docstring">    Raised for invalid storage container names.</tt> </tt>
-<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
-<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
-</div><a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line"> </tt>
-<a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line"> </tt>
-<a name="InvalidObjectName"></a><div id="InvalidObjectName-def"><a name="L66"></a><tt class="py-lineno"> 66</tt> <a class="py-toggle" href="#" id="InvalidObjectName-toggle" onclick="return toggle('InvalidObjectName');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.InvalidObjectName-class.html">InvalidObjectName</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="InvalidObjectName-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="InvalidObjectName-expanded"><a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
-<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line"><tt class="py-docstring">    Raised for invalid storage object names.</tt> </tt>
-<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
-<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
-</div><a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line"> </tt>
-<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line"> </tt>
-<a name="InvalidMetaName"></a><div id="InvalidMetaName-def"><a name="L73"></a><tt class="py-lineno"> 73</tt> <a class="py-toggle" href="#" id="InvalidMetaName-toggle" onclick="return toggle('InvalidMetaName');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.InvalidMetaName-class.html">InvalidMetaName</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="InvalidMetaName-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="InvalidMetaName-expanded"><a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
-<a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line"><tt class="py-docstring">    Raised for invalid metadata names.</tt> </tt>
-<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
-<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
-</div><a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line"> </tt>
-<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line"> </tt>
-<a name="InvalidMetaValue"></a><div id="InvalidMetaValue-def"><a name="L80"></a><tt class="py-lineno"> 80</tt> <a class="py-toggle" href="#" id="InvalidMetaValue-toggle" onclick="return toggle('InvalidMetaValue');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.InvalidMetaValue-class.html">InvalidMetaValue</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="InvalidMetaValue-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="InvalidMetaValue-expanded"><a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
-<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line"><tt class="py-docstring">    Raised for invalid metadata value.</tt> </tt>
-<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
-<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
-</div><a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line"> </tt>
-<a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line"> </tt>
-<a name="InvalidUrl"></a><div id="InvalidUrl-def"><a name="L87"></a><tt class="py-lineno"> 87</tt> <a class="py-toggle" href="#" id="InvalidUrl-toggle" onclick="return toggle('InvalidUrl');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.InvalidUrl-class.html">InvalidUrl</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="InvalidUrl-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="InvalidUrl-expanded"><a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
-<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line"><tt class="py-docstring">    Not a valid url for use with this software.</tt> </tt>
-<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
-<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
-</div><a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line"> </tt>
-<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line"> </tt>
-<a name="InvalidObjectSize"></a><div id="InvalidObjectSize-def"><a name="L94"></a><tt class="py-lineno"> 94</tt> <a class="py-toggle" href="#" id="InvalidObjectSize-toggle" onclick="return toggle('InvalidObjectSize');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.InvalidObjectSize-class.html">InvalidObjectSize</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="InvalidObjectSize-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="InvalidObjectSize-expanded"><a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
-<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line"><tt class="py-docstring">    Not a valid storage_object size attribute.</tt> </tt>
-<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
-<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
-</div><a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line"> </tt>
-<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line"> </tt>
-<a name="IncompleteSend"></a><div id="IncompleteSend-def"><a name="L101"></a><tt class="py-lineno">101</tt> <a class="py-toggle" href="#" id="IncompleteSend-toggle" onclick="return toggle('IncompleteSend');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.IncompleteSend-class.html">IncompleteSend</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="IncompleteSend-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="IncompleteSend-expanded"><a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
-<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line"><tt class="py-docstring">    Raised when there is a insufficient amount of data to send.</tt> </tt>
-<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
-<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
-</div><a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line"> </tt>
-<a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line"> </tt>
-<a name="ContainerNotPublic"></a><div id="ContainerNotPublic-def"><a name="L108"></a><tt class="py-lineno">108</tt> <a class="py-toggle" href="#" id="ContainerNotPublic-toggle" onclick="return toggle('ContainerNotPublic');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.ContainerNotPublic-class.html">ContainerNotPublic</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="ContainerNotPublic-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="ContainerNotPublic-expanded"><a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
-<a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line"><tt class="py-docstring">    Raised when public features of a non-public container are accessed.</tt> </tt>
-<a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
-<a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
-</div><a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line"> </tt>
-<a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line"> </tt>
-<a name="CDNNotEnabled"></a><div id="CDNNotEnabled-def"><a name="L115"></a><tt class="py-lineno">115</tt> <a class="py-toggle" href="#" id="CDNNotEnabled-toggle" onclick="return toggle('CDNNotEnabled');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.CDNNotEnabled-class.html">CDNNotEnabled</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="CDNNotEnabled-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="CDNNotEnabled-expanded"><a name="L116"></a><tt class="py-lineno">116</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
-<a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line"><tt class="py-docstring">    CDN is not enabled for this account.</tt> </tt>
-<a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
-<a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
-</div><a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line"> </tt>
-<a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line"> </tt>
-<a name="AuthenticationFailed"></a><div id="AuthenticationFailed-def"><a name="L122"></a><tt class="py-lineno">122</tt> <a class="py-toggle" href="#" id="AuthenticationFailed-toggle" onclick="return toggle('AuthenticationFailed');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.AuthenticationFailed-class.html">AuthenticationFailed</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="AuthenticationFailed-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="AuthenticationFailed-expanded"><a name="L123"></a><tt class="py-lineno">123</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
-<a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line"><tt class="py-docstring">    Raised on a failure to authenticate.</tt> </tt>
-<a name="L125"></a><tt class="py-lineno">125</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
-<a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
-</div><a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line"> </tt>
-<a name="L128"></a><tt class="py-lineno">128</tt>  <tt class="py-line"> </tt>
-<a name="AuthenticationError"></a><div id="AuthenticationError-def"><a name="L129"></a><tt class="py-lineno">129</tt> <a class="py-toggle" href="#" id="AuthenticationError-toggle" onclick="return toggle('AuthenticationError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.AuthenticationError-class.html">AuthenticationError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="AuthenticationError-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="AuthenticationError-expanded"><a name="L130"></a><tt class="py-lineno">130</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
-<a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line"><tt class="py-docstring">    Raised when an unspecified authentication error has occurred.</tt> </tt>
-<a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
-<a name="L133"></a><tt class="py-lineno">133</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
-</div><a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<a name="ContainerExists"></a><div id="ContainerExists-def"><a name="L59"></a><tt class="py-lineno"> 59</tt> <a class="py-toggle" href="#" id="ContainerExists-toggle" onclick="return toggle('ContainerExists');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.ContainerExists-class.html">ContainerExists</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="ContainerExists-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="ContainerExists-expanded"><a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line"><tt class="py-docstring">    Raised when attempting to create a Container when the container already</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line"><tt class="py-docstring">    exists.</tt> </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
+</div><a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line"> </tt>
+<a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line"> </tt>
+<a name="InvalidContainerName"></a><div id="InvalidContainerName-def"><a name="L67"></a><tt class="py-lineno"> 67</tt> <a class="py-toggle" href="#" id="InvalidContainerName-toggle" onclick="return toggle('InvalidContainerName');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.InvalidContainerName-class.html">InvalidContainerName</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="InvalidContainerName-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="InvalidContainerName-expanded"><a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line"><tt class="py-docstring">    Raised for invalid storage container names.</tt> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
+</div><a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line"> </tt>
+<a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line"> </tt>
+<a name="InvalidObjectName"></a><div id="InvalidObjectName-def"><a name="L74"></a><tt class="py-lineno"> 74</tt> <a class="py-toggle" href="#" id="InvalidObjectName-toggle" onclick="return toggle('InvalidObjectName');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.InvalidObjectName-class.html">InvalidObjectName</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="InvalidObjectName-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="InvalidObjectName-expanded"><a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line"><tt class="py-docstring">    Raised for invalid storage object names.</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
+</div><a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line"> </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line"> </tt>
+<a name="InvalidMetaName"></a><div id="InvalidMetaName-def"><a name="L81"></a><tt class="py-lineno"> 81</tt> <a class="py-toggle" href="#" id="InvalidMetaName-toggle" onclick="return toggle('InvalidMetaName');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.InvalidMetaName-class.html">InvalidMetaName</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="InvalidMetaName-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="InvalidMetaName-expanded"><a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line"><tt class="py-docstring">    Raised for invalid metadata names.</tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
+</div><a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line"> </tt>
+<a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line"> </tt>
+<a name="InvalidMetaValue"></a><div id="InvalidMetaValue-def"><a name="L88"></a><tt class="py-lineno"> 88</tt> <a class="py-toggle" href="#" id="InvalidMetaValue-toggle" onclick="return toggle('InvalidMetaValue');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.InvalidMetaValue-class.html">InvalidMetaValue</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="InvalidMetaValue-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="InvalidMetaValue-expanded"><a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line"><tt class="py-docstring">    Raised for invalid metadata value.</tt> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
+</div><a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line"> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line"> </tt>
+<a name="InvalidUrl"></a><div id="InvalidUrl-def"><a name="L95"></a><tt class="py-lineno"> 95</tt> <a class="py-toggle" href="#" id="InvalidUrl-toggle" onclick="return toggle('InvalidUrl');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.InvalidUrl-class.html">InvalidUrl</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="InvalidUrl-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="InvalidUrl-expanded"><a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line"><tt class="py-docstring">    Not a valid url for use with this software.</tt> </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
+</div><a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line"> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line"> </tt>
+<a name="InvalidObjectSize"></a><div id="InvalidObjectSize-def"><a name="L102"></a><tt class="py-lineno">102</tt> <a class="py-toggle" href="#" id="InvalidObjectSize-toggle" onclick="return toggle('InvalidObjectSize');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.InvalidObjectSize-class.html">InvalidObjectSize</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="InvalidObjectSize-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="InvalidObjectSize-expanded"><a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line"><tt class="py-docstring">    Not a valid storage_object size attribute.</tt> </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
+</div><a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line"> </tt>
+<a name="L108"></a><tt class="py-lineno">108</tt>  <tt class="py-line"> </tt>
+<a name="IncompleteSend"></a><div id="IncompleteSend-def"><a name="L109"></a><tt class="py-lineno">109</tt> <a class="py-toggle" href="#" id="IncompleteSend-toggle" onclick="return toggle('IncompleteSend');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.IncompleteSend-class.html">IncompleteSend</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="IncompleteSend-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="IncompleteSend-expanded"><a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line"><tt class="py-docstring">    Raised when there is a insufficient amount of data to send.</tt> </tt>
+<a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
+</div><a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line"> </tt>
+<a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line"> </tt>
+<a name="ContainerNotPublic"></a><div id="ContainerNotPublic-def"><a name="L116"></a><tt class="py-lineno">116</tt> <a class="py-toggle" href="#" id="ContainerNotPublic-toggle" onclick="return toggle('ContainerNotPublic');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.ContainerNotPublic-class.html">ContainerNotPublic</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="ContainerNotPublic-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="ContainerNotPublic-expanded"><a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line"><tt class="py-docstring">    Raised when public features of a non-public container are accessed.</tt> </tt>
+<a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
+</div><a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line"> </tt>
+<a name="L122"></a><tt class="py-lineno">122</tt>  <tt class="py-line"> </tt>
+<a name="CDNNotEnabled"></a><div id="CDNNotEnabled-def"><a name="L123"></a><tt class="py-lineno">123</tt> <a class="py-toggle" href="#" id="CDNNotEnabled-toggle" onclick="return toggle('CDNNotEnabled');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.CDNNotEnabled-class.html">CDNNotEnabled</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="CDNNotEnabled-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="CDNNotEnabled-expanded"><a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L125"></a><tt class="py-lineno">125</tt>  <tt class="py-line"><tt class="py-docstring">    CDN is not enabled for this account.</tt> </tt>
+<a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
+</div><a name="L128"></a><tt class="py-lineno">128</tt>  <tt class="py-line"> </tt>
+<a name="L129"></a><tt class="py-lineno">129</tt>  <tt class="py-line"> </tt>
+<a name="AuthenticationFailed"></a><div id="AuthenticationFailed-def"><a name="L130"></a><tt class="py-lineno">130</tt> <a class="py-toggle" href="#" id="AuthenticationFailed-toggle" onclick="return toggle('AuthenticationFailed');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.AuthenticationFailed-class.html">AuthenticationFailed</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="AuthenticationFailed-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="AuthenticationFailed-expanded"><a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line"><tt class="py-docstring">    Raised on a failure to authenticate.</tt> </tt>
+<a name="L133"></a><tt class="py-lineno">133</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
+</div><a name="L135"></a><tt class="py-lineno">135</tt>  <tt class="py-line"> </tt>
+<a name="L136"></a><tt class="py-lineno">136</tt>  <tt class="py-line"> </tt>
+<a name="AuthenticationError"></a><div id="AuthenticationError-def"><a name="L137"></a><tt class="py-lineno">137</tt> <a class="py-toggle" href="#" id="AuthenticationError-toggle" onclick="return toggle('AuthenticationError');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="cloudfiles.errors.AuthenticationError-class.html">AuthenticationError</a><tt class="py-op">(</tt><tt class="py-base-class">Error</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="AuthenticationError-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="AuthenticationError-expanded"><a name="L138"></a><tt class="py-lineno">138</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L139"></a><tt class="py-lineno">139</tt>  <tt class="py-line"><tt class="py-docstring">    Raised when an unspecified authentication error has occurred.</tt> </tt>
+<a name="L140"></a><tt class="py-lineno">140</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L141"></a><tt class="py-lineno">141</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
+</div><a name="L142"></a><tt class="py-lineno">142</tt>  <tt class="py-line"> </tt><script type="text/javascript">
 <!--
 expandto(location.href);
 // -->
@@ -244,7 +252,7 @@ expandto(location.href);
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Fri Mar 25 03:59:30 2011
+    Generated by Epydoc 3.0.1 on Thu Sep  1 19:48:01 2011
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

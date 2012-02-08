@@ -75,11 +75,11 @@
 <area shape="rect" href="cloudfiles.container.Container-class.html#is_public" title="Returns a boolean indicating whether or not this container is publically &#160;accessible via the CDN." alt="" coords="17,217,431,236"/>
 <area shape="rect" href="cloudfiles.container.Container-class.html#public_uri" title="Return the URI for this container, if it is publically accessible via the &#160;CDN." alt="" coords="17,236,431,255"/>
 <area shape="rect" href="cloudfiles.container.Container-class.html#public_ssl_uri" title="Return the SSL URI for this container, if it is publically accessible via &#160;the CDN." alt="" coords="17,255,431,273"/>
-<area shape="rect" href="cloudfiles.container.Container-class.html#create_object" title="Return an Object instance, creating it if necessary." alt="" coords="17,273,431,292"/>
-<area shape="rect" href="cloudfiles.container.Container-class.html#get_objects" title="Return a result set of all Objects in the Container." alt="" coords="17,292,431,311"/>
-<area shape="rect" href="cloudfiles.container.Container-class.html#get_object" title="Return an Object instance for an existing storage object." alt="" coords="17,311,431,329"/>
-<area shape="rect" href="cloudfiles.container.Container-class.html#list_objects_info" title="Return information about all objects in the Container." alt="" coords="17,329,431,348"/>
-<area shape="rect" href="cloudfiles.container.Container-class.html#list_objects" title="Return names of all Objects in the Container." alt="" coords="17,348,431,367"/>
+<area shape="rect" href="cloudfiles.container.Container-class.html#public_streaming_uri" title="Return the Streaming URI for this container, if it is publically accessible via the CDN." alt="" coords="17,273,431,292"/>
+<area shape="rect" href="cloudfiles.container.Container-class.html#create_object" title="Return an Object instance, creating it if necessary." alt="" coords="17,292,431,311"/>
+<area shape="rect" href="cloudfiles.container.Container-class.html#get_objects" title="Return a result set of all Objects in the Container." alt="" coords="17,311,431,329"/>
+<area shape="rect" href="cloudfiles.container.Container-class.html#get_object" title="Return an Object instance for an existing storage object." alt="" coords="17,329,431,348"/>
+<area shape="rect" href="cloudfiles.container.Container-class.html#list_objects_info" title="Return information about all objects in the Container." alt="" coords="17,348,431,367"/>
 <area shape="rect" href="cloudfiles.container.Container-class.html#delete_object" title="Permanently remove a storage object." alt="" coords="17,385,431,404"/>
 <area shape="rect" href="cloudfiles.container.Container-class.html" title="Container object and Object instance factory." alt="" coords="16,11,432,405"/>
 </map>
@@ -241,6 +241,25 @@
         <span class="summary-sig-arg">**kwargs</span>)</span><br />
       Return the SSL URI for this container, if it is publically accessible
       via the CDN.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">str</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cloudfiles.container.Container-class.html#public_streaming_uri" class="summary-sig-name">public_streaming_uri</a>(<span class="summary-sig-arg">*args</span>,
+        <span class="summary-sig-arg">**kwargs</span>)</span><br />
+      Return the Streaming URI for this container, if it is publically 
+      accessible via the CDN.</td>
           <td align="right" valign="top">
             
             
@@ -748,6 +767,36 @@
   </dl>
 </td></tr></table>
 </div>
+<a name="public_streaming_uri"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">public_streaming_uri</span>(<span class="sig-arg">*args</span>,
+        <span class="sig-arg">**kwargs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return the Streaming URI for this container, if it is publically 
+  accessible via the CDN.</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>connection[<span class="py-string">'container1'</span>].public_ssl_uri()
+<span class="py-output">'https://c61.stream.rackcdn.com'</span></pre>
+  <dl class="fields">
+    <dt>Returns: str</dt>
+        <dd>the public Streaming URI for this container</dd>
+    <dt>Decorators:</dt>
+    <dd><ul class="nomargin-top">
+        <li><code>@requires_name(InvalidContainerName)</code></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
 <a name="create_object"></a>
 <div>
 <table class="details" border="1" cellpadding="3"
@@ -1083,7 +1132,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Fri Mar 25 03:59:26 2011
+    Generated by Epydoc 3.0.1 on Thu Sep  1 19:47:57 2011
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"
