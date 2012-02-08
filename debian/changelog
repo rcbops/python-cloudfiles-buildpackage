@@ -1,3 +1,9 @@
+python-cloudfiles (2012.0+e3-rcb1) natty; urgency=low
+
+  * bump to release 1.7.9.3, keeping wrong version strategy
+
+ -- RCB Builder <rcb-deploy@lists.rackspace.com>  Wed, 08 Feb 2012 17:29:52 -0600
+
 python-cloudfiles (2011.3-final-rcb1) natty; urgency=low
 
   * import github.com/cloudbuilders/pythn-cloudfiles.git, revision
