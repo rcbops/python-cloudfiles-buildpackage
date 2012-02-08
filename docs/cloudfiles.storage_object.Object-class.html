@@ -61,7 +61,7 @@
 <!-- ==================== CLASS DESCRIPTION ==================== -->
 <h1 class="epydoc">Class Object</h1><p class="nomargin-top"><span class="codelink"><a href="cloudfiles.storage_object-pysrc.html#Object">source&nbsp;code</a></span></p>
 <center>
-<center>  <map id="uml_class_diagram_for_cloudfil_21" name="uml_class_diagram_for_cloudfil_21">
+<center>  <map id="uml_class_diagram_for_cloudfil_22" name="uml_class_diagram_for_cloudfil_22">
 <area shape="rect" href="cloudfiles.container.Container-class.html" title="Container object and Object instance factory." alt="" coords="185,491,311,517"/>
 <area shape="rect" href="cloudfiles.storage_object.Object-class.html#objsum" title="cloudfiles.storage_object.Object.objsum" alt="" coords="17,28,479,47"/>
 <area shape="rect" href="cloudfiles.storage_object.Object-class.html#etag" title="cloudfiles.storage_object.Object.etag" alt="" coords="17,47,479,65"/>
@@ -83,7 +83,6 @@
 <area shape="rect" href="cloudfiles.storage_object.Object-class.html#load_from_filename" title="Put the contents of the named file into remote storage." alt="" coords="17,348,479,367"/>
 <area shape="rect" href="cloudfiles.storage_object.Object-class.html#__str__" title="str(x)" alt="" coords="17,367,479,385"/>
 <area shape="rect" href="cloudfiles.storage_object.Object-class.html#public_uri" title="Retrieve the URI for this object, if its container is public." alt="" coords="17,385,479,404"/>
-<area shape="rect" href="cloudfiles.storage_object.Object-class.html#public_ssl_uri" title="Retrieve the SSL URI for this object, if its container is public." alt="" coords="17,404,479,423"/>
 <area shape="rect" href="cloudfiles.storage_object.Object-class.html#purge_from_cdn" title="Purge Edge cache for this object." alt="" coords="17,423,479,441"/>
 <area shape="rect" href="cloudfiles.storage_object.Object-class.html" title="Storage data representing an object, (metadata and data)." alt="" coords="16,11,480,443"/>
 <area shape="poly" href="cloudfiles.storage_object.Object-class.html#container" title="cloudfiles.storage_object.Object.container" alt="" coords="251,443 251,477 245,477 245,443"/>
@@ -91,7 +90,7 @@
 <area shape="rect" href="cloudfiles.storage_object.Object-class.html#container" title="cloudfiles.storage_object.Object.container" alt="" coords="244,487,252,495"/>
 <area shape="rect" href="cloudfiles.storage_object.Object-class.html#container" title="container" alt="" coords="248,459,301,475"/>
 </map>
-  <img src="uml_class_diagram_for_cloudfil_21.gif" alt='' usemap="#uml_class_diagram_for_cloudfil_21" ismap="ismap" class="graph-without-title" />
+  <img src="uml_class_diagram_for_cloudfil_22.gif" alt='' usemap="#uml_class_diagram_for_cloudfil_22" ismap="ismap" class="graph-without-title" />
 </center>
 </center>
 <hr />
@@ -355,6 +354,24 @@
       Retrieve the SSL URI for this object, if its container is public.</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="cloudfiles.storage_object-pysrc.html#Object.public_ssl_uri">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">str</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cloudfiles.storage_object.Object-class.html#public_streaming_uri" class="summary-sig-name">public_streaming_uri</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Retrieve the streaming URI for this object, if its container is 
+      public.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="cloudfiles.storage_object-pysrc.html#Object.public_streaming_uri">source&nbsp;code</a></span>
             
           </td>
         </tr>
@@ -957,6 +974,34 @@
   </dl>
 </td></tr></table>
 </div>
+<a name="public_streaming_uri"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">public_streaming_uri</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="cloudfiles.storage_object-pysrc.html#Object.public_streaming_uri">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Retrieve the streaming URI for this object, if its container is 
+  public.</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>container1 = connection[<span class="py-string">'container1'</span>]
+<span class="py-prompt">&gt;&gt;&gt; </span>container1.make_public()
+<span class="py-prompt">&gt;&gt;&gt; </span>container1.create_object(<span class="py-string">'file.txt'</span>).write(<span class="py-string">'testing'</span>)
+<span class="py-prompt">&gt;&gt;&gt; </span>container1[<span class="py-string">'file.txt'</span>].public_streaming_uri()
+<span class="py-output">'https://c61.stream.rackcdn.com/file.txt'</span></pre>
+  <dl class="fields">
+    <dt>Returns: str</dt>
+        <dd>the public Streaming URI for this object</dd>
+  </dl>
+</td></tr></table>
+</div>
 <a name="purge_from_cdn"></a>
 <div>
 <table class="details" border="1" cellpadding="3"
@@ -1064,7 +1109,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Fri Mar 25 03:59:29 2011
+    Generated by Epydoc 3.0.1 on Thu Sep  1 19:48:00 2011
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

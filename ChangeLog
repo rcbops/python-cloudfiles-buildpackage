@@ -1,3 +1,6 @@
+2011-09-01 Conrad Weidenkeller <conrad.weidenkeller@rackspace.com>
+  * 1.7.9.3:
+  - Added CDN Streaming Support
 2011-03-25 Conrad Weidenkeller <conrad.weidenkeller@rackspace.com>
   * 1.7.9.2:
   - Added Manifest support for Large Objects

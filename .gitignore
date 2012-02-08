@@ -1,0 +1,7 @@
+*.pyc
+*.wpr
+*~
+build
+MANIFEST
+dist
+cloudfiles.egg-info

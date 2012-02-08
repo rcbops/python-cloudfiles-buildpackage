@@ -648,6 +648,22 @@ class Object(object):
         return "%s/%s" % (self.container.public_ssl_uri().rstrip('/'),
                 quote(self.name))
 
+    def public_streaming_uri(self):
+        """
+        Retrieve the streaming URI for this object, if its container is public.
+
+        >>> container1 = connection['container1']
+        >>> container1.make_public()
+        >>> container1.create_object('file.txt').write('testing')
+        >>> container1['file.txt'].public_streaming_uri()
+        'https://c61.stream.rackcdn.com/file.txt'
+
+        @return: the public Streaming URI for this object
+        @rtype: str
+        """
+        return "%s/%s" % (self.container.public_streaming_uri().rstrip('/'),
+                quote(self.name))
+
     def purge_from_cdn(self, email=None):
         """
         Purge Edge cache for this object.
